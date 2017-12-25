@@ -41,6 +41,20 @@ A variable declared in the definition of a function parameter is called a formal
 
 explicit & restrict & volatile
 
+* Lambda Function
+
+```C++
+  [capture](parameters) mutable ->return-type{statement}
+  // example
+  [](int x, int y) -> int { int z = x + y; return z + x; }
+  [this]() { this->someFunc(); }();
+```
+
+* inherit
+
+```C++
+class derived-class: access-specifier base-class
+```
 
 ---
 
